@@ -1,0 +1,19 @@
+{
+  "name": "blazortailwind",
+  "version": "1.0.0",
+  "description": "Building my Tailwind classes",
+  "main": "index.js",
+  "scripts": {
+    "buildcss": "npx tailwindcss -i ./styles/app.css -o ./wwwroot/css/app.css --watch&",
+    "buildcss:dev": "cross-env NODE_ENV=development ./node_modules/tailwindcss/lib/cli.js -i ./styles/app.css -o ./wwwroot/css/app.css"
+  },
+  "author": "Edwin Muraya",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.2",
+    "cross-env": "^7.0.3",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
+    "tailwindcss": "^3.0.16"
+  }
+}
